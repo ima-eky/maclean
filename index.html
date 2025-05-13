@@ -96,6 +96,7 @@ video {
   object-fit: cover;
   border-radius: 8px;
   display: block;
+  /* background-color: #f0f0f0; */
   margin-bottom: 25px;
 }
 
@@ -104,6 +105,22 @@ video {
   color: #333;
   margin: 0;
 }
+
+h2 {
+  animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 
 footer {
   background-color: #6a1b9a;
@@ -434,6 +451,18 @@ footer {
     </div>
   </footer>
   
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script>
+    // Fire confetti when page loads
+    window.addEventListener('load', () => {
+      confetti({
+        particleCount: 300,   // More or fewer confetti pieces
+        spread: 120,          // Wider spread angle
+        origin: { y: 0.6 },   // Where on the screen it starts
+        colors: ['#d4af37', '#6a1b9a', '#ffffff'], // Real Madrid colours 💜💛🤍
+      });
+    });
+  </script>
   
 </body>
 </html>
