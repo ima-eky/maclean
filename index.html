@@ -358,6 +358,77 @@ footer {
   width: 0;
 }
 
+footer {
+  background: linear-gradient(135deg, #6a1b9a, #d4af37);
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+  margin-top: 60px;
+  border-top: 4px solid #d4af37;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.footer-celebration {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.confetti {
+  font-size: 32px;
+  animation: bounce 1s infinite alternate;
+}
+
+.footer-message {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.footer-shout {
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: bold;
+  margin-top: 10px;
+  animation: shimmer 2.5s infinite;
+}
+
+.footer-credit {
+  font-size: 14px;
+  font-style: italic;
+  color: #f1f1f1;
+  margin-top: 8px;
+}
+
+.gold-text {
+  color: #d4af37;
+  font-weight: bold;
+}
+
+/* Animations */
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-6px); }
+}
+
+@keyframes shimmer {
+  0% { opacity: 0.8; }
+  50% { opacity: 1; }
+  100% { opacity: 0.8; }
+}
+
+/* Interactive effect (hover or tap) */
+.interactive-line:hover .gold-text {
+  animation: pulse 0.5s ease-in-out;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
 
 
   </style>
@@ -575,7 +646,9 @@ footer {
   <footer>
     <div class="footer-celebration">
       <span class="confetti">🎉</span>
-      Made with love for a Real Madrid fan. <br>
+      <p class="footer-message interactive-line">
+        Made with <span class="gold-text">love</span> for a Real Madrid fan.
+      </p>
       <p class="footer-shout">¡Hala Madrid y nada más!</p>
       <span class="footer-credit">From your squad 🫡</span>
     </div>
