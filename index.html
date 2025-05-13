@@ -90,8 +90,8 @@ h2 {
 
 video {
   width: 100%;
-  height: 40vh;
-  max-height: 280px;
+  height: 45vh;
+  max-height: 300px;
   object-fit: cover;
   border-radius: 8px;
   display: block;
@@ -106,9 +106,26 @@ video {
 
 footer {
   text-align: center;
-  padding: 20px;
-  font-size: 0.9em;
-  color: #6a1b9a;
+  padding: 30px 20px;
+  font-size: 14px;
+  color: #6a1b9a; /* Madrid purple */
+  background-color: #f3f3f3;
+  border-top: 2px solid #d4af37; /* Gold */
+  margin-top: 60px;
+}
+
+.footer-heart {
+  font-size: 18px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.footer-tagline {
+  display: block;
+  margin-top: 8px;
+  font-style: italic;
+  color: #d4af37; /* Gold accent */
+  font-weight: bold;
 }
 
 .story {
@@ -356,9 +373,11 @@ footer {
     
     
   </main>
-
   <footer>
-    Made with love for a Real Madrid fan. 
+    <span class="footer-heart">❤️</span>
+    Made with love for a Real Madrid fan. <br>
+    <span class="footer-tagline">¡Hala Madrid y nada más!</span>
   </footer>
+  
 </body>
 </html>
