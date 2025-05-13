@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Legend is 30</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #f4f4f4;
+      color: #111;
+    }
+    header {
+      background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Santiago_Bernabéu_Stadium.jpg/1920px-Santiago_Bernabéu_Stadium.jpg') center/cover no-repeat;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 1px 1px 4px #000;
+      text-align: center;
+    }
+    h1 {
+      font-size: 3em;
+      margin: 0;
+    }
+    .subtext {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+    main {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    .video-card {
+      background: white;
+      padding: 10px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    video {
+      width: 100%;
+      border-radius: 8px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1>THE LEGEND IS 30</h1>
+      <div class="subtext">Celebrating a Madridista and Code Maestro</div>
+    </div>
+  </header>
+
+  <main>
+    <h2>Birthday Wishes</h2>
+    <div class="video-grid">
+      <div class="video-card" aria-label="Birthday wish from Alice">
+        <video controls poster="videos/preview1.jpg">
+          <source src="videos/video1.mp4" type="video/mp4">
+          Sorry, your browser does not support the video tag.
+        </video>
+        <p><strong>From:</strong> Alice</p>
+      </div>
+      <div class="video-card" aria-label="Birthday wish from Bob">
+        <video controls poster="videos/preview2.jpg">
+          <source src="videos/video2.mp4" type="video/mp4">
+          Sorry, your browser does not support the video tag.
+        </video>
+        <p><strong>From:</strong> Bob</p>
+      </div>
+      <!-- Add more video blocks as needed -->
+    </div>
+  </main>
+
+  <footer>
+    Made with love for a Real Madrid fan & keyboard warrior.
+  </footer>
+</body>
+</html>
