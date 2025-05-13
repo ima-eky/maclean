@@ -105,27 +105,60 @@ video {
 }
 
 footer {
+  background-color: #6a1b9a;
+  color: #fff;
+  padding: 40px 20px;
   text-align: center;
-  padding: 30px 20px;
-  font-size: 14px;
-  color: #6a1b9a; /* Madrid purple */
-  background-color: #f3f3f3;
-  border-top: 2px solid #d4af37; /* Gold */
   margin-top: 60px;
+  border-top: 4px solid #d4af37;
 }
 
-.footer-heart {
+.footer-celebration {
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.footer-celebration .confetti {
+  font-size: 32px;
+  display: block;
+  margin-bottom: 10px;
+  animation: bounce 1s infinite alternate;
+}
+
+.footer-celebration p {
+  margin: 6px 0;
+  font-size: 16px;
+}
+
+.footer-shout {
   font-size: 18px;
-  display: block;
-  margin-bottom: 8px;
+  color: #d4af37;
+  font-weight: bold;
+  margin-top: 12px;
 }
 
-.footer-tagline {
+.footer-credit {
+  font-size: 14px;
   display: block;
-  margin-top: 8px;
+  margin-top: 10px;
   font-style: italic;
-  color: #d4af37; /* Gold accent */
-  font-weight: bold;
+  color: #f1f1f1;
+}
+
+/* Animations */
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-8px); }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .story {
@@ -374,10 +407,14 @@ footer {
     
   </main>
   <footer>
-    <span class="footer-heart">❤️</span>
-    Made with love for a Real Madrid fan. <br>
-    <span class="footer-tagline">¡Hala Madrid y nada más!</span>
+    <div class="footer-celebration">
+      <span class="confetti">🎉</span>
+      Made with love for a Real Madrid fan. <br>
+      <p class="footer-shout">¡Hala Madrid y nada más!</p>
+      <span class="footer-credit">From your squad 🫡</span>
+    </div>
   </footer>
+  
   
 </body>
 </html>
