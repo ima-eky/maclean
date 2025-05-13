@@ -266,17 +266,90 @@ footer {
   color: #333;
 }
 
+.hero-header {
+  background: linear-gradient(135deg, #6a1b9a, #d4af37); /* Madrid purple to gold */
+  color: #fff;
+  display: flex;
+  height: 200px;
+
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 70px 50px;
+}
+
+
+
+.hero-content h1 {
+  font-size: 46px;
+  margin: 0;
+  color: #ffffff;
+}
+
+.gold-text {
+  color: #d4af37; /* Gold */
+}
+
+.subtext {
+  font-size: 20px;
+  margin-top: 12px;
+  color: #f0f0f0;
+}
+
+.hero-tagline {
+  font-size: 16px;
+  color: #eaeaea;
+  margin-top: 15px;
+  font-style: italic;
+}
+
+.hero-flair {
+  font-size: 24px;
+  margin-top: 15px;
+  animation: popIn 1.2s ease;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes popIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
 
   </style>
 </head>
 <body>
-  <header>
+  <!-- <header>
     <div>
       <h1>30 Years. One Icon</h1>
       <div class="subtext">Celebrating a Madridista and Code Maestro</div>
       <p> You've been officially invited to explore 30 years of greatness. Scroll, Celebrate</p>
     </div>
+  </header> -->
+  <header class="hero-header">
+    <div class="hero-content">
+      <h1><span class="gold-text">30 Years.</span> One Icon.</h1>
+      <div class="subtext">Celebrating a Madridista and Code Maestro ⚽️💻</div>
+      <p class="hero-tagline">You've been officially invited to explore 30 years of greatness.<br><strong>Scroll. Celebrate. Remember.</strong></p>
+    </div>
   </header>
+  
 
   <main>
     <section class="story">
