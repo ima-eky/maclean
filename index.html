@@ -6,67 +6,185 @@
   <title>The Legend is 30</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
   <style>
-    body {
-      margin: 0;
-      font-family: 'Montserrat', sans-serif;
-      background-color: #f4f4f4;
-      color: #111;
-    }
-    header {
-      background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Santiago_Bernabéu_Stadium.jpg/1920px-Santiago_Bernabéu_Stadium.jpg') center/cover no-repeat;
-      height: 300px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      text-shadow: 1px 1px 4px #000;
-      text-align: center;
-    }
-    h1 {
-      font-size: 3em;
-      margin: 0;
-    }
-    .subtext {
-      font-size: 1.2em;
-      margin-top: 10px;
-    }
-    main {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-    .video-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 20px;
-    }
-    .video-card {
-      background: white;
-      padding: 10px;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
-    video {
-      width: 100%;
-      border-radius: 8px;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9em;
-      color: #666;
-    }
+  body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f8f9fa;
+  color: #333333;
+}
+
+header {
+  background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Santiago_Bernabéu_Stadium.jpg/1920px-Santiago_Bernabéu_Stadium.jpg') center/cover no-repeat;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  color: #333; /* deep grey */
+
+}
+
+h1 {
+  font-size: 3em;
+  margin: 0;
+  color: #d4af37; /* Gold */
+}
+
+.subtext {
+  font-size: 1.2em;
+  margin-top: 10px;
+  color: #333; /* deep grey */
+
+}
+
+header p {
+  margin-top: 10px;
+  font-size: 1em;
+  color: #333;
+}
+
+main {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h2 {
+  color: #6a1b9a; /* Madrid Purple */
+  border-bottom: 2px solid #6a1b9a;
+  padding-bottom: 5px;
+  margin-bottom: 30px;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.video-card {
+  background: #ffffff;
+  padding: 10px;
+  border-radius: 8px;
+  border-top: 4px solid #6a1b9a;
+  transition: transform 0.2s ease;
+}
+
+.video-card:hover {
+  transform: translateY(-5px);
+}
+
+video {
+  width: 100%;
+  border-radius: 8px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
+  color: #6a1b9a;
+}
+
+.story {
+  margin-bottom: 60px;
+}
+
+.story h2 {
+  color: #6a1b9a;
+  font-size: 28px;
+  border-bottom: 2px solid #6a1b9a;
+  padding-bottom: 5px;
+  margin-bottom: 30px;
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Exactly 3 per row */
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .story-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 per row on tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .story-grid {
+    grid-template-columns: 1fr; /* Stack on mobile */
+  }
+}
+
+.story-card {
+  background: #ffffff;
+  border-top: 4px solid #d4af37; /* Gold */
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+}
+
+.story-card img {
+  width: 100%;
+  height: 40vh; /* 30% of viewport height */
+  max-height: 280px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+
+
+.story-card p {
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+}
+
+
   </style>
 </head>
 <body>
   <header>
     <div>
-      <h1>THE LEGEND IS 30</h1>
+      <h1>30 Years. One Icon</h1>
       <div class="subtext">Celebrating a Madridista and Code Maestro</div>
+      <p> You've been officially invited to explore 30 years of greatness. Scroll, Celebrate</p>
     </div>
   </header>
 
   <main>
+    <section class="story">
+      <h2>The Journey</h2>
+      <div class="story-grid">
+        <div class="story-card">
+          <img src="videos/story1.jpg" alt="Early grind" />
+          <p>From humble beginnings...</p>
+        </div>
+        <div class="story-card">
+          <img src="videos/story2.jpg" alt="Late nights" />
+          <p>Late nights, early mornings.</p>
+        </div>
+        <div class="story-card">
+          <img src="videos/story4.jpg" alt="Teamwork" />
+          <p>With the squad; building together.</p>
+        </div>
+        <div class="story-card">
+          <img src="videos/story5.jpg" alt="Breakthrough" />
+          <p>Breakthrough moments.</p>
+        </div>
+        <div class="story-card">
+          <img src="videos/story6.jpg" alt="Recognition" />
+          <p>Finally getting noticed.</p>
+        </div>
+        <div class="story-card">
+          <img src="videos/story7.jpeg" alt="Success" />
+          <p>The legend at 30.</p>
+        </div>
+      </div>
+    </section>
+    
     <h2>Birthday Wishes</h2>
     <div class="video-grid">
       <div class="video-card" aria-label="Birthday wish from Alice">
