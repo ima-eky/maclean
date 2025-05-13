@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>The Legend is 30</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet" />
   <style>
   body {
   margin: 0;
@@ -353,7 +354,7 @@ footer {
   overflow: hidden;
   white-space: nowrap;
   border-right: 2px solid #fff;
-  animation: typing 3s steps(40, end) forwards, blink 0.75s step-end infinite;
+  animation: typing 3s steps(40, end) forwards, blink 0.75s step-end 3;
   width: 0;
 }
 
@@ -385,31 +386,44 @@ footer {
       <h2>The Journey</h2>
       <div class="story-grid">
         <div class="story-card">
-          <img src="videos/story1.jpg" alt="Early grind" />
+          <a href="videos/story1.jpg" data-lightbox="journey" data-title="From humble beginnings...">
+            <img src="videos/story1.jpg" alt="Early grind" />
+          </a>
           <p>From humble beginnings...</p>
         </div>
         <div class="story-card">
-          <img src="videos/story2.jpg" alt="Late nights" />
+          <a href="videos/story2.jpg" data-lightbox="journey" data-title="Late nights, early mornings.">
+            <img src="videos/story2.jpg" alt="Late nights" />
+          </a>
           <p>Late nights, early mornings.</p>
         </div>
         <div class="story-card">
-          <img src="videos/story4.jpg" alt="Teamwork" />
+          <a href="videos/story4.jpg" data-lightbox="journey" data-title="With the squad; building together.">
+            <img src="videos/story4.jpg" alt="Teamwork" />
+          </a>
           <p>With the squad; building together.</p>
         </div>
         <div class="story-card">
-          <img src="videos/story5.jpg" alt="Breakthrough" />
+          <a href="videos/story5.jpg" data-lightbox="journey" data-title="Breakthrough moments.">
+            <img src="videos/story5.jpg" alt="Breakthrough" />
+          </a>
           <p>Breakthrough moments.</p>
         </div>
         <div class="story-card">
-          <img src="videos/story6.jpg" alt="Recognition" />
+          <a href="videos/story6.jpg" data-lightbox="journey" data-title="Finally getting noticed.">
+            <img src="videos/story6.jpg" alt="Recognition" />
+          </a>
           <p>Finally getting noticed.</p>
         </div>
         <div class="story-card">
-          <img src="videos/story7.jpg" alt="Success" />
+          <a href="videos/story7.jpg" data-lightbox="journey" data-title="The legend at 30.">
+            <img src="videos/story7.jpg" alt="Success" />
+          </a>
           <p>The legend at 30.</p>
         </div>
       </div>
     </section>
+    
     
     <h2>Birthday Wishes</h2>
     <div class="video-grid">
@@ -579,6 +593,7 @@ footer {
       });
     });
   </script>
-  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
 </body>
 </html>
