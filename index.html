@@ -59,15 +59,28 @@ h2 {
 
 .video-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(3, 1fr); /* 3 per row by default */
   gap: 20px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+  .video-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 per row on tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .video-grid {
+    grid-template-columns: 1fr; /* Stack on small screens */
+  }
 }
 
 .video-card {
   background: #ffffff;
   padding: 10px;
   border-radius: 8px;
-  border-top: 4px solid #6a1b9a;
+  border-top: 4px solid #6a1b9a; /* Purple accent */
   transition: transform 0.2s ease;
 }
 
@@ -77,7 +90,18 @@ h2 {
 
 video {
   width: 100%;
+  height: 40vh;
+  max-height: 280px;
+  object-fit: cover;
   border-radius: 8px;
+  display: block;
+  margin-bottom: 25px;
+}
+
+.video-card p {
+  font-size: 14px;
+  color: #333;
+  margin: 0;
 }
 
 footer {
@@ -187,26 +211,132 @@ footer {
     
     <h2>Birthday Wishes</h2>
     <div class="video-grid">
-      <div class="video-card" aria-label="Birthday wish from Alice">
-        <video controls poster="videos/preview1.jpg">
+      <div class="video-card">
+        <video controls poster="videos/poster1.jpg">
           <source src="videos/video1.mp4" type="video/mp4">
-          Sorry, your browser does not support the video tag.
+          Your browser does not support the video tag.
         </video>
         <p><strong>From:</strong> Alice</p>
       </div>
-      <div class="video-card" aria-label="Birthday wish from Bob">
-        <video controls poster="videos/preview2.jpg">
+    
+      <div class="video-card">
+        <video controls poster="videos/poster2.jpg">
           <source src="videos/video2.mp4" type="video/mp4">
-          Sorry, your browser does not support the video tag.
+          Your browser does not support the video tag.
         </video>
         <p><strong>From:</strong> Bob</p>
       </div>
-      <!-- Add more video blocks as needed -->
+    
+      <div class="video-card">
+        <video controls poster="videos/poster3.jpg">
+          <source src="videos/video3.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p><strong>From:</strong> Clara</p>
+      </div>
+    
+      <div class="video-card">
+        <video controls poster="videos/poster4.jpg">
+          <source src="videos/video4.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p><strong>From:</strong> David</p>
+      </div>
+    
+      <div class="video-card">
+        <video controls poster="videos/poster5.jpg">
+          <source src="videos/video5.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p><strong>From:</strong> Ella</p>
+      </div>
+    
+      <div class="video-card">
+        <video controls poster="videos/poster6.jpg">
+          <source src="videos/video6.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p><strong>From:</strong> Faisal</p>
+      </div>
+    
+      <div class="video-card">
+        <video controls poster="videos/poster7.jpg">
+          <source src="videos/video7.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p><strong>From:</strong> Grace</p>
+      </div>
+    
+      <div class="video-card">
+        <video controls poster="videos/poster8.jpg">
+          <source src="videos/video8.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p><strong>From:</strong> Hamza</p>
+      </div>
+    
+      <div class="video-card">
+        <video controls poster="videos/poster9.jpg">
+          <source src="videos/video9.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p><strong>From:</strong> Ivy</p>
+      </div>
+    
+      <div class="video-card">
+        <video controls poster="videos/poster10.jpg">
+          <source src="videos/video10.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p><strong>From:</strong> James</p>
+      </div>
+    
+      <div class="video-card">
+        <video controls poster="videos/poster11.jpg">
+          <source src="videos/video11.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p><strong>From:</strong> Karla</p>
+      </div>
+    
+      <div class="video-card">
+        <video controls poster="videos/poster12.jpg">
+          <source src="videos/video12.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p><strong>From:</strong> Leo</p>
+      </div>
+    
+      <div class="video-card">
+        <video controls poster="videos/poster13.jpg">
+          <source src="videos/video13.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p><strong>From:</strong> Maya</p>
+      </div>
+    
+      <div class="video-card">
+        <video controls poster="videos/poster14.jpg">
+          <source src="videos/video14.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p><strong>From:</strong> Nikhil</p>
+      </div>
+    
+      <div class="video-card">
+        <video controls poster="videos/poster15.jpg">
+          <source src="videos/video15.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p><strong>From:</strong> Olivia</p>
+      </div>
     </div>
+    
+    
   </main>
 
   <footer>
-    Made with love for a Real Madrid fan & keyboard warrior.
+    Made with love for a Real Madrid fan. 
   </footer>
 </body>
 </html>
